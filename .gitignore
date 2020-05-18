@@ -6,3 +6,5 @@ results/*.png
 results/*.txt
 processed_data/*.dat
 processed_data/*.log
+.snakemake/
+zipf_analysis.tar.gz
