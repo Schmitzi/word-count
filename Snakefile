@@ -30,6 +30,7 @@ rule make_plot:
         plotcount='source/plotcount.py',
 	book='processed_data/{file}.dat'
     output: 'results/{file}.png'
+    conda: 'envs/plotting.yml'
     shell: 'python {input.plotcount} {input.book} {output}'
 
 # generate summary table
